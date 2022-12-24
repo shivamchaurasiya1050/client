@@ -10,7 +10,7 @@ const Todo = () => {
     const [data,setData] =useState();
     useEffect(()=>{
         const getData =async ()=>{
-            const res = await axios.get("http://localhost:8000/api");
+            const res = await axios.get("https://testing-server-yo48.onrender.com/api");
             setData(res.data)
             
         }      
